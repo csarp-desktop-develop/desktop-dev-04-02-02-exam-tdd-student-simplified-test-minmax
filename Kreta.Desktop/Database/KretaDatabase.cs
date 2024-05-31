@@ -386,7 +386,7 @@ namespace Kreta.Desktop.Database
             new SchoolClass
             {
                 Id=schoolClassId1,
-                SchoolYear=9,
+                SchoolGrade=9,
                 SchoolClassType=SchoolClassType.ClassA,
                 YearOfEnrolment=2025,
                 IsArchived=false,
@@ -396,7 +396,7 @@ namespace Kreta.Desktop.Database
             new SchoolClass
             {
                 Id=schoolClassId2,
-                SchoolYear=10,
+                SchoolGrade=10,
                 SchoolClassType=SchoolClassType.ClassB,
                 YearOfEnrolment=2024,
                 IsArchived=false,
@@ -405,7 +405,7 @@ namespace Kreta.Desktop.Database
             new SchoolClass
             {
                 Id=schoolClassId3,
-                SchoolYear=14,
+                SchoolGrade=14,
                 SchoolClassType=SchoolClassType.ClassB,
                 YearOfEnrolment=2024,
                 IsArchived=false,

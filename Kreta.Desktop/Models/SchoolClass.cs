@@ -9,7 +9,7 @@ namespace Kreta.Desktop.Models
         public SchoolClass()
         {
             Id = Guid.Empty;
-            SchoolYear = -1;
+            SchoolGrade = -1;
             SchoolClassType = SchoolClassType.ClassA;
             TypeOfEducationId = Guid.Empty;
             YearOfEnrolment = -1;
@@ -17,10 +17,10 @@ namespace Kreta.Desktop.Models
             HeadTeacherId = Guid.Empty;
         }
 
-        public SchoolClass(Guid id, int schoolYear, SchoolClassType schoolClassType, int yearOfEnrolment, bool isArchived, Guid typeOfEducationId, Guid headTeacherId)
+        public SchoolClass(Guid id, int schoolGrade, SchoolClassType schoolClassType, int yearOfEnrolment, bool isArchived, Guid typeOfEducationId, Guid headTeacherId)
         {
             Id = id;
-            SchoolYear = schoolYear;
+            SchoolGrade = schoolGrade;
             SchoolClassType = schoolClassType;
             TypeOfEducationId = typeOfEducationId;
             YearOfEnrolment = yearOfEnrolment;
@@ -30,7 +30,7 @@ namespace Kreta.Desktop.Models
 
         public Guid Id { get; set; }
         public bool HasId => Id != Guid.Empty;
-        public int SchoolYear { get; set; }
+        public int SchoolGrade { get; set; }
         public SchoolClassType SchoolClassType { get; set; }
         public Guid? TypeOfEducationId { get; set; }
         public Guid? HeadTeacherId { get; set; }
@@ -50,7 +50,7 @@ namespace Kreta.Desktop.Models
                 return className;
             }
         }
-        public string SchoolClassName => $"{SchoolYear}.{SchoolClassTypeName} ({YearOfEnrolment})";
+        public string SchoolClassName => $"{SchoolGrade}.{SchoolClassTypeName} ({YearOfEnrolment})";
         public override string ToString()
         {
             string archived = IsArchived ? "archivált" : string.Empty;
