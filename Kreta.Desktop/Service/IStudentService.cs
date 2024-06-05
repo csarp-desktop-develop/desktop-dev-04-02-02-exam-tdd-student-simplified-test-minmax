@@ -9,6 +9,5 @@ namespace Kreta.Desktop.Service
         public Guid GetYoungestStudent(bool gender);
         public Guid GetOldestStudent();
         public Guid GetOldestestStudent(bool gender);
-        public double GetAvgAge(int schoolClassSchoolGrade, SchoolClassType type);
     }
 }
